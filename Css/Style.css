@@ -1,0 +1,280 @@
+*{
+    text-decoration: none;
+    font-family: "Hanken Grotesk", sans-serif;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--white);
+}
+
+:root{
+     --white: #FFF;
+     --white60: #FFFFFF99;
+     --gray: #808080;
+     --blue: #322BEA;
+     --dark_blue: #303B59;
+     --purple: #6743FF;
+     --dark_purple: #4D22C9; 
+     --transparent: #D9D9D900;
+
+     --red: #FF5555;
+     --ligth_red: #FFF6F5; 
+     --yellow: #FFB21E;
+     --light_yellow: #FFFBF2;
+     --green: #00BB8F;
+     --light_green: #F2FBFA;
+     --light_blue: #F3F3FD;
+
+     
+}
+
+.card{
+    margin: 200px auto;
+    background-color: var(--white);
+    border-radius: 30px;
+    box-shadow: 10px 19px 100px 0px var(--gray);
+    width: 736px;
+    height: 514px;
+    display: flex;
+}
+
+.card__left{
+    background: linear-gradient(var(--purple), var(--blue));
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    display: flex;
+    padding: 32px;
+    gap: 40px;
+}
+
+.card__header{
+    padding-top: 23px;
+    color: var(--white60);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card__rank{
+    background:linear-gradient(var(--dark_purple), var(--transparent));
+    height: 200px;
+    width: 200px;
+    border-radius: 999px;
+    align-items:center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card__rank--number{
+    color: var(--white);
+    font-size: 72px;
+    margin: 0px;
+}
+
+.card__rank--info{
+    color: var(--white60);
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0px;
+}
+
+.card__footer{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.card__result {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.card__result--info{
+    color: var(--white60);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 700;
+    
+}
+
+
+/* RIGHT */
+
+
+.card__right{
+    width: 50%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card__content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+}
+
+.card__tittle{
+    display: flex;
+    padding: 0px 1px;
+    align-self: stretch;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--dark_blue);
+}
+
+.card__stats{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    
+}
+
+.stats__box{
+    border-radius: 10px;
+    display: flex;
+    height: 30px;
+    width: auto;
+    padding: 15px;
+    justify-content: space-between;
+}
+
+.stats__box--one{
+    background-color: var(--ligth_red);
+}
+
+.stats__box--two{
+    background-color: var(--light_yellow);
+}
+
+.stats__box--three{
+    background-color: var(--light_green);
+}
+
+.stats__box--four{
+    background-color: var(--light_blue);
+}
+
+.stats__category{
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    gap: 12px;
+    align-items: center;
+}
+
+.stats__category--reaction{
+    color: var(--red);
+}
+
+.stats__category--memory{
+    color: var(--yellow);
+}
+
+.stats__category--verbal{
+    color: var(--green);
+}
+
+.stats__category--visual{
+    color: var(--blue);
+}
+
+.stats__value{
+    color: var(--gray);
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.stats__value--number{
+    color: var(--dark_blue);
+}
+
+.button__primary{
+    background: linear-gradient(var(--purple), var(--blue));
+    display: flex;
+    width: auto;
+    height: 56px;
+    padding: 4px 106px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+}   
+
+.button__primary--text{
+    color: var(--white);
+}
+
+
+
+@media (max-width:375px){
+
+.card{
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0px;
+    box-shadow: none;
+    
+}
+
+.card__left{
+    width: auto;
+    border-radius: 0px 0px 30px 30px;
+    gap: 12px;
+    padding: 24px;
+}
+
+
+
+.card__header{
+    display: flex;
+    padding: 0px;
+    font-size: 18px;
+}
+
+.card__rank{
+    width: 140px;
+    height: 140px;
+    gap: 13px;
+}
+
+.card__rank--number{
+    font-size: 50px;
+}
+
+.card__rank--info{
+    font-size: 16px;
+}
+
+.card__result{
+    font-size: 24px;
+}
+
+.card__result--info{
+    font-size: 14px;
+}
+
+.card__right{
+    width: auto;
+    padding: 24px;
+}
+
+.stats__category{
+    font-size: 16px;
+}
+
+.stats__value{
+    font-size: 16px;
+}
+
+}
